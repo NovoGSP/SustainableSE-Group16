@@ -1,10 +1,6 @@
 ---
-author: Mirko Boon, Reeve Lorena, Gopal-Raj Panchu, Sotiris Vacanas
-title: "Comparing Energy Consumption of Note-Taking Applications"
-image: 
+authors: Mirko Boon, Reeve Lorena, Gopal-Raj Panchu, Sotiris Vacanas
 date: 28/02/2024
-summary: |-
-    In this experiment we compared the energy efficiency of different text-editing applications to evaluate which common text-editor is most efficient. We have found that notepad++ is significantly more efficient than alternatives like word and vs-code and recommend taking short notes in notepad++ when possible to reduce energy consumption.
 ---
 
 # Comparing Energy Consumption of Note-Taking Applications
@@ -94,7 +90,7 @@ The aforementioned sequence is repeated 30 times for each of the four editors we
 
 The results from our experiments are illustrated in the violin plot below:
 
-![image](../img/p1_measuring_software/g16_notetaking/violinplotfinal.png)
+![image](violinplotfinal.png)
 
 The violin plot shows the total energy consumption for NotePad++, NotePad, MS Word and Visual Studio Code.This violin plot was created after the rejecting outliers using the z-score. After performing the outlier rejection, we kept all the runs except for one run of the Visual Studio Code. Thus we kept 29 runs for Visual Studio Code and 30 runs for the rest of the editors.
 
