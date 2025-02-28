@@ -182,6 +182,8 @@ Ensure you have:
 2. Navigate to the project directory:
    ```sh
    cd path\to\your\project
+   ```
+3. Enter the proper paths in python_script.py
 
 To replicate our experiment you can run the following:
 

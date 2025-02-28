@@ -3,8 +3,8 @@ import os
 
 samples = []
 
-root = "Path\\to\\experiment"
-energi_bridge = "path\\to\\energi\\bridge\\EnergiBridge-main\\target\\release\\energibridge -o "
+root = "Path\\to\\experiment"  #enter the absolute path to the project folder (C:\\...)
+energi_bridge = "path\\to\\energi\\bridge\\EnergiBridge-main\\target\\release\\energibridge -o " ##enter the absolute path to the energi bridge project (C:\\...)
 
 for i in range(4):
     for j in range(30):
@@ -13,12 +13,12 @@ for i in range(4):
 if not os.path.exists(root + "\\results"):
     os.makedirs(root + "\\results")
 
-vscode = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\vsCodeLorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'
-notepad = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\notepadLorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'
-notepad_plus = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\notepad++Lorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'
-word = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\wordLoremIpsum.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'
+vscode = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\vsCodeLorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'           #command to run vs code ahk and energi bridge
+notepad = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\notepadLorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'         #command to run notepad ahk and energi bridge
+notepad_plus = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\notepad++Lorem.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'  #command to run notepad++ ahk and energi bridge
+word = 'REM Start typeLoremIpsum.exe in the background \nstart "" "'+ root + '\\wordLoremIpsum.ahk" \n\n timeout /t 2 /nobreak > NUL \n\nREM Start energibridge in the background \nstart /wait ' + energi_bridge + root + '\\results\\results-{}.csv --summary timeout 15 \n\n'          #command to run word ahk and energi bridge
 
-random.shuffle(samples)
+random.shuffle(samples) #shuffle the commands
 
 num_vs = 0
 num_notepad = 0
